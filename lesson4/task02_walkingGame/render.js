@@ -11,11 +11,11 @@ let renderer = {
         for (let row = 0; row < config.rowCount; row++) {
             for (let col = 0; col < config.colCount; col++) {
                 if (row === player.y && col === player.x) {
-                    this.map += "🙂";
+                    this.map += "😈";
                 } else if (config.scheme[col + row * config.rowCount] === 1) {
-                    this.map += "🟦";
+                    this.map += "🌑";
                 } else
-                    this.map += "⬜";
+                    this.map += "🌕";
             }
             this.map += "\n";
         }
