@@ -13,7 +13,7 @@ alert("ЗАДАНИЕ 1_2. ES5 vs ES6");
 
     Post.prototype.edit = function (str) {
         this.text = str;
-    }
+    };
 
     function AttachedPost(author, text, date) {
         Post.call(this, author, text, date);
@@ -25,7 +25,7 @@ alert("ЗАДАНИЕ 1_2. ES5 vs ES6");
 
     AttachedPost.prototype.makeTextHighlighted = function () {
         this.highlighted = true;
-    }
+    };
 
     let post1 = new Post("author1", "text1", "12-01-2020");
     post1.edit("new edited text");

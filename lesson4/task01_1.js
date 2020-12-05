@@ -12,7 +12,7 @@ alert("ЗАДАНИЕ 1_1. ES5 vs ES6");
 
     Product.prototype.make25PercentDiscount = function () {
         this.price *= 0.75;
-    }
+    };
 
     let product1 = new Product("product", 100);
     product1.make25PercentDiscount();

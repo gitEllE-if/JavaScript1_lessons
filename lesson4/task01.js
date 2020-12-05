@@ -13,8 +13,9 @@ alert("ЗАДАНИЕ 1. объект{единицы, десятки, сотни
 function getNumberFromUser(min, max) {
     let str = prompt("Введите целое число в диапазоне [" + min + ", " + max + "]");
     let num = +str;
-    if (str === "" || isNaN(num) || !Number.isInteger(num) || num < min || num > max)
+    if (str === "" || isNaN(num) || !Number.isInteger(num) || num < min || num > max) {
         return null;
+    }
     return num;
 }
 
