@@ -44,9 +44,11 @@
     -->
 
     <script>
+        let btnEl = document.querySelectorAll('button');
+        btnEl.forEach((button) => button.addEventListener('click', closeClickHandler));
 
         function closeClickHandler(event) {
-           
+            event.currentTarget.parentNode.style.display = 'none';
         }
     </script>
 </body>
