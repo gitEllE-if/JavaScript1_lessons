@@ -26,9 +26,9 @@
 
         let btnEl = document.querySelectorAll('button');
         btnEl.forEach((elem) => elem.addEventListener('click', function () {
-            let dataEl = elem.dataset;
-            for (let param in dataEl) {
-                console.log(param + ' ' + dataEl[param]);
+            let dataSet = elem.dataset;
+            for (let param in dataSet) {
+                console.log(param + ' ' + dataSet[param]);
             }
         }));
     </script>
